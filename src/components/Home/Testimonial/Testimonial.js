@@ -1,22 +1,22 @@
 import React from "react";
-import quote from "../../../images/quote.png";
 
-const Testimonial = () => {
+const Testimonial = (props) => {
+  const { quote, name, from, img } = props.testimonial;
   return (
-    <section className="d-flex justify-content-center mt-5">
-      <div className="row w-75">
-        <div className="col-md-9">
-          <h5 style={{ color:'#6ACECE'}}>Testimonial</h5>
-          <h2 className="mt-3">
-            What's Our Patents <br /> Says
-          </h2>
+    <div className="col-md-4">
+      <div className="card shadow-lg p-4">
+        <div className="card-body">
+          <p className="card-text text-center">{quote}</p>
         </div>
-        <div className="col-md-3">
-            <img style={{width:'200px'}} src={quote} alt=""/>
+        <div className="card-footer d-flex  align-items-center justify-content-center">
+          <img className="mx-3" src={img} alt="" width="60" />
+          <div>
+            <h6 className="text-primary">{name}</h6>
+            <p className="m-0">{from}</p>
+          </div>
         </div>
       </div>
-      <div className="row w-75"></div>
-    </section>
+    </div>
   );
 };
 

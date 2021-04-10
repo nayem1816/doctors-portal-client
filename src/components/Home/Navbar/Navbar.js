@@ -1,49 +1,37 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import './Navbar.css'
+import React from 'react';
 
 const Navbar = () => {
-  return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light navbar-container">
-        <div className="container-fluid">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <Link className="nav-link me-5" to="/home">
-                Home
-              </Link>
-              <a className="nav-link me-5" href="#">
-                About
-              </a>
-              <a className="nav-link me-5 text-white" href="#">
-                Dental Services
-              </a>
-              <a className="nav-link me-5 text-white" href="#">
-                Reviews
-              </a>
-              <a className="nav-link me-5 text-white" href="#">
-                Blog
-              </a>
-              <a className="nav-link me-5 text-white" href="#">
-                Contact Us
-              </a>
+    return (
+        <nav className="navbar navbar-expand-lg navbar-light">
+
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav ms-auto">
+                    <li className="nav-item">
+                        <a className="nav-link ms-5" href="#">Home <span className="sr-only">(current)</span></a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link ms-5" href="#">About</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link ms-5 text-white" href="#">Dental Services</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link ms-5 text-white" href="#">Reviews</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link ms-5 text-white" href="#">Blogs</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link me-5 ms-5 text-white" href="#">Contact Us</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  );
+        </nav>
+    );
 };
 
 export default Navbar;

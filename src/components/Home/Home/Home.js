@@ -1,18 +1,26 @@
 import React from 'react';
-import Appointment from '../Appointment/Appointment';
-import DentalCare from '../DentalCare/DentalCare';
+import FeaturedService from '../FeaturedService/FeaturedService';
+import MakeAppointment from '../MakeAppointment/MakeAppointment';
+import Testimonials from '../Testimonials/Testimonials';
 import Header from '../Header/Header';
 import Services from '../Services/Services';
-import Testimonial from '../Testimonial/Testimonial';
+import Blogs from '../Blogs/Blogs';
+import Doctors from '../Doctors/Doctors';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
     return (
         <div>
             <Header></Header>
             <Services></Services>
-            <DentalCare></DentalCare>
-            <Appointment></Appointment>
-            <Testimonial></Testimonial>
+            <FeaturedService></FeaturedService>
+            <MakeAppointment></MakeAppointment>
+            <Testimonials></Testimonials>
+            <Blogs></Blogs>
+            <Doctors></Doctors>
+            <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };
