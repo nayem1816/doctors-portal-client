@@ -1,0 +1,23 @@
+.appointment-container {
+    height:500px;
+    position:relative;
+    background-image: url('../../../images/appointmentBg1.png');
+    background-size:cover;
+    z-index: -1;
+    margin-top: 150px;
+}
+.appointment-container::after{
+    height:500px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+    background-color: #3A4256;
+    opacity: .9;
+    z-index: -1;
+}
+.appointment-doctor-img{
+    height: 640px;
+    transform: translateY(-140px)
+}
